@@ -75,7 +75,7 @@ fake_news_detection/
 ```sh
 git clone https://github.com/<your-username>/<repo-name>.git
 ```
-cd <repo-name>
+cd fake_news_detection
 
 ### 2️⃣ Create Virtual Environment
 ```sh
