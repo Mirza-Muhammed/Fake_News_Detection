@@ -55,48 +55,52 @@ Deploy with Heroku, Docker, or any cloud service.
 ## 📂 Project Structure
 
    ```sh
-   
-         fake_news_detection/
-         ├── data/
-         │   └── news.csv             # Dataset
-         ├── models/
-         │   ├── model.joblib         # Trained ML model
-         │   └── vectorizer.joblib    # TF-IDF vectorizer
-         ├── templates/
-         │   └── index.html           # Web UI
-         ├── static/
-         │   └── styles.css           # Optional CSS
-         ├── app.py                   # Flask app
-         ├── train.py                 # Training script
-         ├── requirements.txt         # Dependencies
-         └── README.md                # Documentation
+fake_news_detection/
+├── data/
+│   └── news.csv             # Dataset
+├── models/
+│   ├── model.joblib         # Trained ML model
+│   └── vectorizer.joblib    # TF-IDF vectorizer
+├── templates/
+│   └── index.html           # Web UI
+├── static/
+│   └── styles.css           # Optional CSS
+├── app.py                   # Flask app
+├── train.py                 # Training script
+├── requirements.txt         # Dependencies
+└── README.md                # Documentation
    ```
-⚡ Installation & Setup
-1️⃣ Clone the Repository
+## ⚡ Installation & Setup
+### 1️⃣ Clone the Repository
+```sh
 git clone https://github.com/<your-username>/<repo-name>.git
+```
 cd <repo-name>
 
-2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
+```sh
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
-
-3️⃣ Install Dependencies
+```
+### 3️⃣ Install Dependencies
+```sh
 pip install -r requirements.txt
-
-4️⃣ Train the Model
+```
+### 4️⃣ Train the Model
+```sh
 python train.py
-
-5️⃣ Run the App
+```
+### 5️⃣ Run the App
+```sh
 python app.py
-
-
+```
 Then open: http://127.0.0.1:5000/
 
-📄 Documentation
+# 📄 Documentation
 
 For more details on dataset, model choices, and extensions, see the project wiki or inline docs.
 
-🤝 Contributing
+# 🤝 Contributing
 
 Contributions are welcome!
 
@@ -108,14 +112,8 @@ Commit changes
 
 Submit a Pull Request 🚀
 
-🛡️ License
+# 🛡️ License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
----
-
-👉 Do you want me to also add a **Mermaid workflow diagram** (like a flowchart for dataset → training → app → prediction) in this README to make it more visually engaging?
-
-
-ChatGPT can make mistakes
