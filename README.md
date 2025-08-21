@@ -73,7 +73,7 @@ fake_news_detection/
 ## ⚡ Installation & Setup
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/<Mirza-Muhammed>/<Fake_News_Detection>.git
 ```
 cd fake_news_detection
 
