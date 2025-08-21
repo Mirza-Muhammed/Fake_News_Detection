@@ -52,22 +52,25 @@ Access the app at: http://127.0.0.1:5000/
 
 Deploy with Heroku, Docker, or any cloud service.
 
-📂 Project Structure
-fake_news_detection/
-├── data/
-│   └── news.csv             # Dataset
-├── models/
-│   ├── model.joblib         # Trained ML model
-│   └── vectorizer.joblib    # TF-IDF vectorizer
-├── templates/
-│   └── index.html           # Web UI
-├── static/
-│   └── styles.css           # Optional CSS
-├── app.py                   # Flask app
-├── train.py                 # Training script
-├── requirements.txt         # Dependencies
-└── README.md                # Documentation
+## 📂 Project Structure
 
+   ```sh
+   
+         fake_news_detection/
+         ├── data/
+         │   └── news.csv             # Dataset
+         ├── models/
+         │   ├── model.joblib         # Trained ML model
+         │   └── vectorizer.joblib    # TF-IDF vectorizer
+         ├── templates/
+         │   └── index.html           # Web UI
+         ├── static/
+         │   └── styles.css           # Optional CSS
+         ├── app.py                   # Flask app
+         ├── train.py                 # Training script
+         ├── requirements.txt         # Dependencies
+         └── README.md                # Documentation
+   ```
 ⚡ Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/<your-username>/<repo-name>.git
