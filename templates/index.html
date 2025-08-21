@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>📰 Fake News Detector</h1>
+      <p>Paste a headline or article text. The model will predict whether it's likely <b>REAL</b> or <b>FAKE</b>.</p>
+      
+      <form method="post" action="/">
+        <textarea name="text" placeholder="Paste text here..."></textarea>
+        <div style="margin-top:12px">
+          <button type="submit">Predict</button>
+        </div>
+      </form>
+
+      {% if prediction %}
+        <div class="result">
+          <b>Prediction:</b> {{ prediction }}
+          {% if proba is not none %}
+            <br><b>Confidence:</b> {{ (proba*100)|round(2) }}%
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="footer">
+        <p>Model: TF-IDF + Linear SVM trained on your dataset.</p>
+        <p>Created by: Mirza Muhammed</p>
+      </div>
+    </div>
+  </body>
+</html>
